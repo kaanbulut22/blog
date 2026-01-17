@@ -12,18 +12,3 @@
 body {
     padding-top: 80px !important;
 }
-
-/* Mobilde jumbotron başlığını aşağı itmek ve yazıyı sığdırmak için */
-@media (max-width: 767px) {
-    header .jumbotron {
-        margin-top: 20px !important; /* Navbar ile araya ek mesafe koyar */
-        padding-top: 60px !important; /* İçerideki yazıyı aşağı iter */
-    }
-
-    header h1.display-4 {
-        font-size: 1.8rem !important; /* Yazıyı telefon ekranına sığacak boyuta getirir */
-        word-wrap: break-word; /* Uzun kelimeleri böler */
-    }
-}
-
-
