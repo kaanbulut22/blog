@@ -1,0 +1,14 @@
+.navbar {
+    opacity: 0.8;
+    border-bottom: 1px solid #fff;
+} 
+   
+.jumbotron {
+    padding-top: 100px;
+    
+}
+
+/* Navbar'ın altında kalan alanı zorla açar */
+body {
+    padding-top: 80px !important;
+}
