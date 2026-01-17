@@ -8,19 +8,22 @@
     
 }
 
+/* 1. Adım: Tüm sayfa içeriğini Navbar yüksekliği kadar aşağı it */
 body {
-    padding-top: 56px; /* Navbar yüksekliği kadar boşluk */
+    padding-top: 70px; 
 }
 
-/* Navbar sabit (fixed) olduğu için içeriği aşağı itmemiz gerekiyor */
-body {
-    padding-top: 75px; 
-}
-
-/* Mobilde hala sorun varsa jumbotron'un iç boşluğunu artıralım */
+/* 2. Adım: Sadece mobil ekranlar için özel ayar */
 @media (max-width: 768px) {
     .jumbotron {
-        padding-top: 5rem !important;
-        padding-bottom: 2rem !important;
+        /* Başlığı biraz daha aşağı itmek için iç boşluk ekle */
+        padding-top: 4rem !important; 
+    }
+    
+    .display-4 {
+        /* Yazı boyutunu mobilde küçült ki taşmasın */
+        font-size: 2.2rem !important;
+        line-height: 1.2;
     }
 }
+
