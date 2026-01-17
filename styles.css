@@ -8,22 +8,22 @@
     
 }
 
-/* 1. Adım: Tüm sayfa içeriğini Navbar yüksekliği kadar aşağı it */
+/* Navbar'ın altında kalan alanı zorla açar */
 body {
-    padding-top: 70px; 
+    padding-top: 80px !important;
 }
 
-/* 2. Adım: Sadece mobil ekranlar için özel ayar */
-@media (max-width: 768px) {
-    .jumbotron {
-        /* Başlığı biraz daha aşağı itmek için iç boşluk ekle */
-        padding-top: 4rem !important; 
+/* Mobilde jumbotron başlığını aşağı itmek ve yazıyı sığdırmak için */
+@media (max-width: 767px) {
+    header .jumbotron {
+        margin-top: 20px !important; /* Navbar ile araya ek mesafe koyar */
+        padding-top: 60px !important; /* İçerideki yazıyı aşağı iter */
     }
-    
-    .display-4 {
-        /* Yazı boyutunu mobilde küçült ki taşmasın */
-        font-size: 2.2rem !important;
-        line-height: 1.2;
+
+    header h1.display-4 {
+        font-size: 1.8rem !important; /* Yazıyı telefon ekranına sığacak boyuta getirir */
+        word-wrap: break-word; /* Uzun kelimeleri böler */
     }
 }
+
 
