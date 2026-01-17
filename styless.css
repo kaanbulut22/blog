@@ -1,14 +1,18 @@
-.navbar {
-    opacity: 0.8;
-    border-bottom: 1px solid #fff;
-} 
-   
-.jumbotron {
-    padding-top: 100px;
-    
+/* Navbar sabit olduğu için tüm içeriği aşağı itiyoruz */
+body {
+    padding-top: 75px !important;
 }
 
-/* Navbar'ın altında kalan alanı zorla açar */
-body {
-    padding-top: 80px !important;
+/* Mobilde jumbotron başlığının Navbar'ın altında kalmasını engellemek için */
+@media (max-width: 768px) {
+    .jumbotron {
+        margin-top: 10px !important;
+        padding-top: 60px !important; /* Başlığı Navbar'ın altından aşağı iter */
+        padding-bottom: 30px !important;
+    }
+
+    .display-4 {
+        font-size: 2rem !important; /* Yazıyı mobilde küçülttük ki sığsın */
+        line-height: 1.2 !important;
+    }
 }
